@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="nDO-LG-Gk1" id="yMi-WS-fj9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="1Yt-aj-a5G">
+                    <navigationItem key="navigationItem" title="Notes" id="1Yt-aj-a5G">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pb8-kI-Gpq">
                             <color key="tintColor" red="0.0077976290991495258" green="0.0" blue="0.89266920336787559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -77,7 +77,8 @@
                             <outlet property="delegate" destination="Uhm-G8-zUl" id="NIi-tN-8Zy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Items" id="LYG-xo-PMQ">
+                    <navigationItem key="navigationItem" title="Items" leftItemsSupplementBackButton="YES" id="LYG-xo-PMQ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="x2k-wq-T8o"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Yo-qU-BrE">
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -95,13 +96,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dUD-Mu-Dsh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Chi-wY-JaU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="arrowshape.turn.up.left.circle" catalog="system" backIndicatorTransitionMaskImage="arrowshape.turn.up.left" id="Chi-wY-JaU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" systemColor="systemYellowColor"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
+                        <variation key="heightClass=regular-widthClass=compact" backIndicatorTransitionMaskImage="arrowshape.turn.up.left" catalog="system"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -114,6 +117,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.turn.up.left.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
